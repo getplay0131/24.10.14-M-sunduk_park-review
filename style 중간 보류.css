@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  line-height: 190%;
+  font-size: 10pt;
+  font-family: "Nanum Gothic", sans-serif;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #499b00;
+  width: 100%;
+  color: #fff;
+}
+
+#xIcon {
+  display: none;
+}
+
+#burger {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header h1 {
+  /* background-color: #000; */
+  margin: auto;
+}
+
+main {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  height: 550px;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+  border: 2px solid #eee;
+  box-shadow: 2px 2px 2px #000;
+}
+
+nav ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+nav li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+}
+
+nav li::before {
+  content: "\2618";
+  color: #499b00;
+  margin: 1rem;
+}
+
+section {
+  margin: auto;
+  padding: 1rem;
+  height: max-content;
+  /* position: relative; */
+}
+
+section p::first-letter {
+  color: #499b00;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section h2 {
+  font-family: "Gugi", cursive;
+}
+
+#sec01 {
+  position: relative;
+}
+
+#sec01 img {
+  float: right;
+  transform: scale(0.5);
+  padding: -50px;
+  border: 3px solid #000;
+  margin: -4rem;
+  right: 0;
+  top: 0;
+}
+
+#sec02 {
+  position: relative;
+  border: 1px solid #000;
+  display: flex;
+  /* justify-content: space-between; */
+  height: 350px;
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left 2% top 18%;
+  background-size: 50%;
+}
+
+#sec02 h2 {
+  position: absolute;
+}
+
+#sec02 ol {
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  text-align: right;
+  list-style: none;
+  color: #499b00;
+  border: 3px solid #000;
+}
+
+#sec02 p {
+  position: absolute;
+  bottom: 0;
+  border: 3px solid #000;
+  font-size: 0.8rem;
+  width: 100%;
+  left: 0;
+}
